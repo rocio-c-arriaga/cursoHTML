@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+</body>
+Teclea tu nombre: <input type="text" name="frame"
+id="frame" onblur="myFunction()">
+
+<p>Cuando abandonas el campo se dispara una acción.</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("frame");
+    x.value = x.value.toUpperCase();
+}
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+         <!--Ejemplo webstorage, podemos capturar informacion de usuario y 
+            referir a ello, pasar valores entre una pagina y otra, investigar vigencia
+        -->
+    <div id="result"></div>
+
+    <script>
+    //Check browser support
+    if (typeof(Storage) !=="undefined") {
+        // Storage
+        localStorage.setItem("Nombre", "Rocío");
+        //Retrieve
+        document.getElementById("result").innerHTML = localStorage.getItem("Nombre");
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    }
+    
+    </script>
+
+    </body>
+    
+</html>
+
+

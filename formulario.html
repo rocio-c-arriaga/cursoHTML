@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario ejercicio</title>
+        <script>
+                function myFunction(){
+                    alert("Página ha sido cargada!");
+                }
+                </script>
+    </head>
+
+    <body onload="myFunction()">
+    <meta charset = "UTF-8">
+
+        <p id="título">Registrate</p>
+
+        <p>Nombre</p>
+        <input type="text" name="nombre" id="fname" onblur="myFunction2()"><br><br>
+        <p>Email</p>
+        <input type="text" name="email" value=""><br><br>
+        <input type="submit" onclick="myFunction3()" value="OK"><br>
+        
+        <script>
+                document.getElementById("título").innerHTML="Registrate ahora!";
+                document.getElementById("result").value="Registrate ahora!";
+        </script>
+
+        <script>
+        function myFunction2() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();//convierte en mayusculas de manera uniforme
+        if (x.value === "Rocío");
+        alert("Hola!");
+        }
+        </script>
+
+        <script>
+        function myFunction3() {
+            alert("Haz presionado una tecla");
+        }
+        </script>
+
+    <video width="320" height ="240" controls><br>
+        <source src=C:\Users\wemenconnect\Documents\cursoHTML5FranciscoOrta\videos.webm type=video/webm>
+        <source src=C:\Users\wemenconnect\Documents\cursoHTML5FranciscoOrta\videos\Wildfire.ogg type=video/ogg>
+        <source src=C:\Users\wemenconnect\Documents\cursoHTML5FranciscoOrta\videos\paseobici.mp4 type=video/mp4>
+        <source src=C:\Users\wemenconnect\Documents\curso\paseobici.3gp type=video/3gp>
+    </video>
+
+    <audio id="demo"
+    src="C:\Users\wemenconnect\Documents\cursoHTML5FranciscoOrta\audios\Kalimba.mp3"
+    preload="auto" controls>
+    </audio>
+    <div>
+        <button onclick="document.getElementById('demo').play()">Reproducir el Audio</button>
+        <button onclick="document.getElementById('demo').pause()">Pausar el Audio</button>
+        <button onclick="document.getElementById('demo').volume+=0.1()">Aumentar el volumen</button>
+        <button onclick="document.getElementById('demo').volume-0.1()">Disminuir el volumen</button>
+    </div>
+
+    <!--se puede dividir en diferentes iframes, como una ventana dentro de otra ventana y cargar CONTIENE-->
+    <iframe width="420" height="345"
+    src="https://youtu.be/2XkV6IpV2Y0">
+    </iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2XkV6IpV2Y0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   
+</body>
+</html>
